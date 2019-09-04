@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Registration page</title>
+    <link href="registration.component.css" type="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+<div class="tab-content">
+  <div id="signup">
+    <h1>Sign Up for Free</h1>
+
+    <form  #userform="ngForm" (ngSubmit)="onSave(userform.value)">
+      <div class="top-row">
+        <i class="fa fa-child icon"></i>
+        <div class="field-wrap">
+
+          <input type="text" name="petiant_name" placeholder="Petiant Name" autocomplete="off" class="form-control" ngModel required/>
+        </div>
+        <i class="fa fa-odnoklassniki icon"></i>
+        <div class="field-wrap">
+          <input type="number"  name="age"  placeholder="Petiant age" autocomplete="off" class="form-control" ngModel required/>
+        </div>
+      </div>
+
+      <div class="top-row">
+        <i class="fa fa-male icon"></i>
+      <div class="field-wrap">
+        <input type="text" name="fathers_name" placeholder="Father's Name" autocomplete="off" class="form-control"  ngModel required />
+      </div>
+        <i class="fa fa-female icon"></i>
+        <div class="field-wrap">
+          <input type="text" name="mothers_name" placeholder="Mother's Name" autocomplete="off" class="form-control" ngModel required/>
+        </div>
+      </div>
+
+      <div class="top-row">
+        <i class="fa fa-birthday-cake icon"></i>
+        <div class="field-wrap">
+          <label>
+           Date Of Birth<span class="req">*</span>
+          </label>
+          <input type="date" name="date_of_birth" autocomplete="off" class="form-control"  ngModel required/>
+        </div>
+
+
+        <i class="fa fa-calendar icon"  style="margin-left: 45px"></i>
+        <div class="field-wrap">
+          <label>
+            Date<span class="req">*</span>
+          </label>
+          <input type="date" name="date" autocomplete="off" class="form-control" ngModel required />
+        </div>
+
+        <div class="top-row">
+          <i class="fa fa-mobile-phone icon" style="font-size:25px" ></i>
+          <div class="field-wrap">
+
+            <input type="number" name="contact_number" placeholder="Contact Number" autocomplete="off" class="form-control" ngModel required/>
+          </div>
+          <i class="fa fa-medkit icon"></i>
+          <div class="field-wrap" >
+            <label >Vaccine</label>
+            <select (click)="get()" name="vaccines_name" class="form-control" ngModel >
+
+              <option selected>{{data1[0].vaccines_name}}</option>
+              <option>{{data1[1].vaccines_name}}</option>
+              <option>{{data1[2].vaccines_name}}</option>
+
+            </select>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="button">
+        <input type="submit" name="Save" value="{{valbutton}}" >
+      </div>
+    </form>
+  </div>
+
+</div>
+  </body>
+</html>

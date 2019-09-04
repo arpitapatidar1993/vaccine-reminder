@@ -1,0 +1,81 @@
+.tab-content {
+
+}
+h1
+{
+  display: inline-block;
+  margin-top: 15px;
+  alignment: left;
+  margin-left: 0px;
+  position: center;
+  padding: 25px;
+  text-align: center;
+  color: white;
+}
+.field-wrap
+{
+  display: inline-block;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.field-wrap input
+{
+  width: 80%;
+  margin-bottom: 20px;
+}
+.field-wrap input[type="text"],input[type=number]
+ {
+   border: none;
+   border-bottom: 1px solid #fff;
+   background: transparent;
+   outline: none;
+   height: 30px;
+   color: white;
+  font-size: 20px;
+
+ }
+.field-wrap label
+{
+  color: gray;
+
+  }
+.field-wrap input[type=date]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: 0px;
+  height: 35px;
+  color: gray;
+  font-size: 13.5px;
+  width: 200px;
+  display: block;
+
+}
+
+
+.button input[type=submit]
+{
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 500px;
+  background-color:gray;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.button input[type=submit]:hover
+{
+  cursor: pointer;
+  background-color:  #1ab188;
+  color: #000;
+}
+.icon {
+  padding: 5px;
+  background: darkslategray;
+  color: gray;
+  min-width: 30px;
+  text-align: center;
+}

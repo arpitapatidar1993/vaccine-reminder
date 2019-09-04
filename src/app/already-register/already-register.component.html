@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>Registration page</title>
+  <link href="already-register.component.css" type="text/html">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="tab-content">
+  <div id="signup">
+    <h1>Enter Petiant Name And Contact no</h1>
+
+    <form  #userform1="ngForm" (ngSubmit)="getinfo(userform1.value)" >
+      <div class="top-row">
+        <i class="fa fa-child icon"></i>
+        <div class="field-wrap">
+
+          <input type="text" name="petiant_name" placeholder="Petiant Name" autocomplete="off" class="form-control" ngModel required/>
+        </div>
+
+          <i class="fa fa-mobile-phone icon" style="font-size:25px" ></i>
+          <div class="field-wrap">
+            <input type="number" name="contact_number" placeholder="Contact Number" autocomplete="off" class="form-control" ngModel required/>
+          </div>
+      </div>
+
+      <table>
+        <thead>
+        <tr *ngFor="let kk1 of data1;">
+          <th>Petiant Name</th>
+          <th>Age</th>
+          <th>Fathers Name</th>
+          <th>Mothers Name</th>
+          <th>Date Of Birth</th>
+          <th>Date</th>
+          <th>Contact Number</th>
+          <th>Vaccines</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let kk1 of data1;">
+          <td>{{kk1.petiant_name}}</td>
+          <td>{{kk1.age}}</td>
+          <td>{{kk1.fathers_name}}</td>
+          <td>{{kk1.mothers_name}}</td>
+          <td>{{kk1.date_of_birth}}</td>
+          <td>{{kk1.date}}</td>
+          <td>{{kk1.contact_number}}</td>
+          <td><a  style="color: blueviolet">Add Vaccines</a></td>
+
+        </tr>
+        </tbody>
+      </table>
+
+      <div class="button">
+        <input type="submit" name="Save" value="{{valbutton}}">
+      </div>
+    </form>
+  </div>
+
+</div>
+</body>
+</html>

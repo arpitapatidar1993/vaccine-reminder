@@ -1,0 +1,54 @@
+.body
+{
+  background-color: lightgray;
+  width: 1200px;
+  height: 600px;
+  margin-left: 90px;
+  margin-top: 0px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.form
+{
+  background-color: darkslategray;
+  padding: 30px;
+  max-width: 800px;
+  border-radius: 3px;
+  margin-left: 170px;
+
+}
+.tab-group {
+
+  list-style:none;
+  padding-bottom:20px;
+  align-items: center;
+  width: 800px;
+ margin-left: 50px;
+}
+li a
+{
+  display:block;
+  text-decoration:none;
+  padding:10px;
+  background-color: gray;
+  color: lightgray;
+  font-size:20px;
+  float: left;
+  width:30%;
+  cursor:pointer;
+  text-align: center;
+  transition:.5s ease;
+
+
+
+}
+li a:hover
+{
+  background-color: #1ab188;
+  color: white;
+}
+
+
+
+
